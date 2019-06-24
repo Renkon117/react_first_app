@@ -26,6 +26,7 @@ function ItemDetail({ match }) {
     <div>
         <h1>{item.name}</h1>
         <img src={item.images.transparent} alt=""/>
+        <h3>Description: {item.description}</h3>
     </div>
   );
 }
