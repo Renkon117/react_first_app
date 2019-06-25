@@ -26,6 +26,9 @@ function App() {
 const Home = () => (
   <div>
     <h1>Home Page</h1>
+    <p>Welcome to my first app page. This website is one of my proctice project, created for no business purpose.
+      Please take a look at Shop page to see Fortnite Items, which is imported API from Fortnite. <a href="https://console.fortniteapi.com/"> https://console.fortniteapi.com/ </a>
+    </p>
   </div>
 );
 

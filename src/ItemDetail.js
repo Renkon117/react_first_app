@@ -1,5 +1,7 @@
 import React, {useState,  useEffect} from 'react';
 import './App.css';
+import {Link} from "react-router-dom";
+
 
 function ItemDetail({ match }) {
     useEffect(() =>{
@@ -27,7 +29,14 @@ function ItemDetail({ match }) {
         <h1>{item.name}</h1>
         <img src={item.images.transparent} alt=""/>
         <h3>Description: {item.description}</h3>
+        <h4>Rarity: {item.rarity}</h4>
+        <h4>Type: {item.type}</h4>
+
+        <Link to="/shop">
+        <h3>Go Back to Shop list</h3>
+        </Link>
     </div>
+    
   );
 }
 

@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.App p{
+  font-size:20px;
+}
+
 
 nav{
   display: flex;
@@ -13,9 +17,20 @@ nav{
 }
 
 .nav-links{
-  width:50%;
+  width:40%;
   display:flex;
   justify-content:space-around;
   align-items: center;
   list-style:none;
+}
+
+li{
+  padding:16px;
+  text-decoration: none;
+}
+
+li:hover{
+  cursor: pointer;
+  background-color:rgb(111, 163, 180);
+  border-radius:1px;
 }

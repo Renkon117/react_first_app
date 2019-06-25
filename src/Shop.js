@@ -3,7 +3,6 @@ import './App.css';
 import {Link} from "react-router-dom";
 
 function Shop() {
-
   useEffect(() =>{
     fetchItems();
   },[]);
@@ -13,9 +12,9 @@ function Shop() {
   const fetchItems = async() => {
     const data = await fetch ("https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get");
 
-    const items = await data.json();
-    console.log(items.items);
-    setItems(items.items);
+    const goods = await data.json();
+    console.log(goods.items);
+    setItems(goods.items);
   } 
   return (
     <div>
